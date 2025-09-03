@@ -2,16 +2,18 @@
 
 /* Main Section Container */
 .top-categories {
-    padding: 80px 20px;
+    /* padding: 0px 20px; */
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Section Title */
 .section-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #333;
+    color: black;
     margin-bottom: 10px; /* Ample space below the title */
+    text-transform: uppercase;
 }
 
 /* Hide the subtitle as per the request for a single line title */
@@ -43,6 +45,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
 
 /* Hover Effect for the Card */
