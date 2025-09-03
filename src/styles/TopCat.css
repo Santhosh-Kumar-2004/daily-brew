@@ -39,7 +39,7 @@
     flex: 1; /* Makes cards flexible to fill the container */
     min-width: 250px; /* Minimum size to prevent being too small */
     max-width: 350px; /* Maximum size to keep them from getting too big */
-    aspect-ratio: 1 / 1; /* Ensures the card is a perfect square */
+    aspect-ratio: 1 / 1; 
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@
     color: #fff;
     text-align: left;
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.4s ease;
+    /* transition: opacity 0.4s ease; */
 }
 
 /* Hover Effect to show the overlay */
