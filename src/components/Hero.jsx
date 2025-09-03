@@ -4,7 +4,7 @@ import heroImg from '../assets/hero-img.png' // place your image inside src/asse
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id='home'>
       {/* Background Image */}
       <img src={heroImg} alt="Coffee background" className="hero-image" />
 

@@ -10,7 +10,7 @@
 
 .bean {
   position: absolute;
-  width: 70px;
+  width: 80px;
   height: auto;
   opacity: 0.2;
 }
@@ -20,7 +20,7 @@
 .bean2  { top: 15%;  right: 20%; }
 .bean3  { bottom: 20%; left: 12%; }
 .bean4  { top: 40%;  left: 45%; }
-.bean5  { bottom: 12%; right: 28%; }
+.bean5  { bottom: 8%; left: 8%; }
 .bean6  { top: 65%;  right: 10%; }
 .bean7  { top: 30%;  left: 20%; }
 .bean8  { top: 55%;  left: 5%; }

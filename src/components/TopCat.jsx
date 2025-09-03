@@ -12,7 +12,7 @@ const TopCategories = () => {
   ]
 
   return (
-    <section className="top-categories" id="categories">
+    <section className="top-categories" id="menu">
       <h2 className="section-title">Top Categories</h2>
       <p className="section-subtitle">Explore the Most Bought Drinks This Week</p>
 

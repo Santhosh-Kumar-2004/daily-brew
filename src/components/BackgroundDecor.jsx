@@ -21,14 +21,24 @@ const BackgroundDecor = () => {
                 <img src={bean} alt="bean" className="bean bean13" />
                 <img src={bean} alt="bean" className="bean bean14" />
                 <img src={bean} alt="bean" className="bean bean15" />
-                
+
+                {/* {[...Array(15)].map((_, i) => (
+                    <img
+                        key={i}
+                        src={bean}
+                        alt="bean"
+                        className="bean"
+                        style={{ "--rotation": `${(i % 5) * 15 - 30}deg` }} // slight rotation
+                    />
+                ))} */}
+
             </div>
 
             {/* <div className="steam steam1"></div>
             <div className="steam steam2"></div> */}
 
-            {/* <div className="blob blob1"></div>
-            <div className="blob blob2"></div> */}
+            <div className="blob blob1"></div>
+            <div className="blob blob2"></div>
 
         </>
     );
