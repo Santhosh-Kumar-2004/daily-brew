@@ -6,44 +6,80 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px; /* Constrain width for larger screens */
+  margin: 0 auto; /* Center the container */
 }
 
 .navbar-logo img {
   height: 80px;
+  transition: transform 0.3s ease; /* Smooth logo hover effect */
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .navbar-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem; /* Slightly increased gap for better spacing */
   font-weight: bolder;
 }
 
 .navbar-links li {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 600; /* Slightly lighter than bold for modern look */
+  font-size: 1.1rem; /* Consistent font size */
   color: #3B2F2F;
-  transition: color 0.3s ease;
+  position: relative; /* For underline effect */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #6F4E37; /* Coffee brown underline */
+  transition: width 0.3s ease; /* Smooth underline animation */
 }
 
 .navbar-links li:hover {
-  color: #6F4E37; /* coffee brown */
+  color: #6F4E37; /* Coffee brown */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.navbar-links li:hover::after {
+  width: 100%; /* Full underline on hover */
 }
 
 .navbar-search {
-  margin-left: 2rem;
+  margin-left: 2.5rem; /* Consistent spacing */
 }
 
 .search-icon {
   font-size: 2rem;
   color: #3B2F2F;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth icon hover */
+}
+
+.search-icon:hover {
+  color: #6F4E37; /* Coffee brown */
+  transform: scale(1.1); /* Slight zoom on hover */
 }
