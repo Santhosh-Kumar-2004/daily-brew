@@ -3,12 +3,14 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TopCategories from './components/TopCat'
 import TopMilkshakes from './components/TopMilk'
+import BackgroundDecor from './components/BackgroundDecor'
 // import Hero from './components/Hero'
 
 function App() {
 
   return (
      <>
+      <BackgroundDecor />
       <Navbar />
       <Hero />
       <TopCategories />

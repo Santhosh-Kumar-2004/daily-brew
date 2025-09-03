@@ -17,6 +17,9 @@
   font-size: 1.3rem;
   color: #6F4E37;
   margin-bottom: 50px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .milkshake-swiper {

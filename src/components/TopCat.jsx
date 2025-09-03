@@ -14,7 +14,7 @@ const TopCategories = () => {
   return (
     <section className="top-categories" id="categories">
       <h2 className="section-title">Top Categories</h2>
-      <p className="section-subtitle">Explore the top sold products</p>
+      <p className="section-subtitle">Explore the Most Bought Drinks This Week</p>
 
       <div className="categories-container">
         {categories.map((cat) => (
