@@ -16,19 +16,20 @@
 }
 
 .navbar-logo img {
-  height: 50px;
+  height: 80px;
 }
 
 .navbar-links {
   display: flex;
   list-style: none;
   gap: 2rem;
+  font-weight: bolder;
 }
 
 .navbar-links li {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   color: #3B2F2F;
   transition: color 0.3s ease;
 }
@@ -42,7 +43,7 @@
 }
 
 .search-icon {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #3B2F2F;
   cursor: pointer;
 }
