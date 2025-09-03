@@ -6,7 +6,7 @@
 }
 
 .footer-top-line {
-  width: 100%;
+  width: 90%;
   height: 3px;
   background: #8a8a8a;
   margin-bottom: 40px;
@@ -69,17 +69,21 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .settings-box button {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.4);
-  color: #fff;
+  /* color: black; */
+  color: white;
   padding: 8px 15px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s;
+  font-weight: 600;
 }
 
 .settings-box button:hover {
