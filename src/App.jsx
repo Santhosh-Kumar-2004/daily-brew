@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import TopCategories from './components/TopCat'
 // import Hero from './components/Hero'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
      <>
       <Navbar />
       <Hero />
+      <TopCategories />
       {/* <Hero /> */}
       {/* <Hero /> */}
       {/* <section id="home">
