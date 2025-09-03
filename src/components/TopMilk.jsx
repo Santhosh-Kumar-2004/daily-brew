@@ -49,6 +49,8 @@ const TopMilkshakes = () => {
                 {/* <FaThumbsUp className="like-icon" /> {shake.likes} */}
               </div>
 
+            <h3 className="milkshake-name">{shake.name}</h3>
+
               {/* Bottom bar */}
               <div className="milkshake-footer">
                 <span className="price">${shake.price}</span>

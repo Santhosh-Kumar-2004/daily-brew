@@ -1,7 +1,7 @@
 .top-milkshakes {
   text-align: center;
   padding: 5rem 2rem;
-  background-color: #fffaf7;
+  /* background-color: #fffaf7; */
 }
 
 .section-title {
@@ -14,13 +14,13 @@
 
 .section-subtitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #6F4E37;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
 }
 
 .milkshake-swiper {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .milkshake-card {
@@ -33,6 +33,7 @@
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: auto;
+  /* margin: 0px 20px; */
 }
 
 .milkshake-card:hover {
@@ -76,6 +77,18 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.milkshake-name {
+  position: absolute;
+  bottom: 60px; /* pushes it above the footer */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
 
 .price {
   font-size: 1.1rem;
