@@ -3,7 +3,7 @@
 .hero {
     position: relative;
     width: 100vw;
-    height: 150vh; /* full screen height */
+    height: 130vh; /* full screen height */
     overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
 /* Overlay Content Container */
 .hero-content {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 5%;
     color: #fff;
     /* Use flexbox for better alignment if you add more elements */
