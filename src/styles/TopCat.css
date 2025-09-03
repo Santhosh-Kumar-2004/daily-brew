@@ -1,83 +1,117 @@
+/* TopCat.css */
+
+/* Main Section Container */
 .top-categories {
-  text-align: center;
-  /* padding: 5rem 2rem; */
+    padding: 80px 20px;
+    text-align: center;
 }
 
+/* Section Title */
 .section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #3B2F2F;
-  margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px; /* Ample space below the title */
 }
 
+/* Hide the subtitle as per the request for a single line title */
 .section-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #6F4E37;
-  margin-bottom: 3rem;
+    /* display: none; */
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
 }
 
+/* Categories Grid Container */
 .categories-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    padding: 0 10%; /* Creates a container that takes up 80% of the width */
 }
 
+/* Individual Category Card */
 .category-card {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    flex: 1; /* Makes cards flexible to fill the container */
+    min-width: 250px; /* Minimum size to prevent being too small */
+    max-width: 350px; /* Maximum size to keep them from getting too big */
+    aspect-ratio: 1 / 1; /* Ensures the card is a perfect square */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect for the Card */
 .category-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Category Image */
 .category-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6; /* less opacity */
-  transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+/* Hover Effect for the Image */
 .category-card:hover .category-img {
-  opacity: 0.9;
+    transform: scale(1.05); /* Subtle zoom effect */
 }
+
+/* Overlay for Text Content */
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: #fff;
+    text-align: left;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease;
+}
+
+/* Hover Effect to show the overlay */
+/* .category-card:hover .category-overlay {
+    opacity: 1;
+} */
 
 .category-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    opacity: 1;
 }
 
+/* Category Name Text */
 .category-name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
 }
 
+/* View More Text */
 .view-more {
-  font-size: 1rem;
-  font-weight: 500;
-  background: rgba(0,0,0,0.5);
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  display: inline-block;
-  transition: background 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid transparent; /* Prepare for hover effect */
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid #fff;
 }
 
-.view-more:hover {
-  background: #6F4E37; /* coffee brown */
-}
+/* Hover effect for View More text */
+/* .category-card:hover .view-more {
+    border-bottom: 2px solid #fff; 
+} */    
