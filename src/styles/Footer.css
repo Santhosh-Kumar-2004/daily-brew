@@ -1,0 +1,88 @@
+.footer {
+  background: #111; /* blackish background */
+  color: #fff;
+  padding: 80px 10% 40px; /* leaves left/right 10% space */
+  position: relative;
+}
+
+.footer-top-line {
+  width: 100%;
+  height: 3px;
+  background: #8a8a8a;
+  margin-bottom: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #d7bda6; /* coffee highlight */
+}
+
+.footer-col a {
+  display: block;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 17px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #aaa;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d7bda6;
+}
+
+/* Floating Settings Box */
+.settings-box {
+  position: absolute;
+  top: -50px; /* floating above footer */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #b48866, #d7bda6, #b48866);
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 15px;
+}
+
+.settings-box button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.settings-box button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}

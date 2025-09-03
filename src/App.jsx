@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import TopCategories from './components/TopCat'
 import TopMilkshakes from './components/TopMilk'
 import BackgroundDecor from './components/BackgroundDecor'
+import Footer from './components/Footer'
 // import Hero from './components/Hero'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <TopCategories />
       <TopMilkshakes />
+      <Footer />
       {/* <Hero /> */}
       {/* <Hero /> */}
       {/* <section id="home">
