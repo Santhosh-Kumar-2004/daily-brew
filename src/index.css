@@ -1,5 +1,5 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap'); */
 
 /* Reset & Global Styles */
 * {
@@ -41,4 +41,3 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
-  
