@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TopCategories from './components/TopCat'
+import TopMilkshakes from './components/TopMilk'
 // import Hero from './components/Hero'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <TopCategories />
+      <TopMilkshakes />
       {/* <Hero /> */}
       {/* <Hero /> */}
       {/* <section id="home">
