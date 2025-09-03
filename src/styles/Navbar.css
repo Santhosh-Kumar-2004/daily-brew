@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  background-color: #D7BDA6; /* vanilla background */
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #3B2F2F;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li:hover {
+  color: #6F4E37; /* coffee brown */
+}
+
+.navbar-search {
+  margin-left: 2rem;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #3B2F2F;
+  cursor: pointer;
+}
