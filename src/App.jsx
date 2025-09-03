@@ -10,10 +10,11 @@ function App() {
       <Navbar />
       <Hero />
       {/* <Hero /> */}
+      {/* <Hero /> */}
       {/* <section id="home">
         <Hero />
       </section>
-      <section id="menu" style={{ height: '100vh', padding: '4rem' }}>
+      <section id="menu" style={{ height: '100  vh', padding: '4rem' }}>
         <h2>Menu Section</h2>
       </section>
       <section id="blog" style={{ height: '100vh', padding: '4rem' }}>

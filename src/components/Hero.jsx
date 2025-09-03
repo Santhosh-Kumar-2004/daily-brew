@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Hero.css'
-import heroImg from '../assets/hero-coffee.png' // place your image inside src/assets
+import heroImg from '../assets/hero-img.png' // place your image inside src/assets
 
 const Hero = () => {
   return (
