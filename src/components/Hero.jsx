@@ -10,7 +10,8 @@ const Hero = () => {
 
       {/* Overlay Content */}
       <div className="hero-content">
-        <h1 className="hero-title">Freshly Roasted Coffee</h1>
+        <h1 className="hero-title">Savour The Perfect <br />Brew!</h1>
+        <p className='hero-para'>"Awaken your senses with the rich, aromatic embrace of our handcrafted coffee, brewed with passion and the finest ethically-sourced beans. From meticulously crafted espresso drinks to unique seasonal specials, discover your perfect cup."</p>
         <button className="hero-btn">Shop Now</button>
       </div>
     </section>

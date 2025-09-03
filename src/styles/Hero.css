@@ -1,61 +1,82 @@
+
+/* Hero Section Container */
 .hero {
-  position: relative;
-  width: 100vw;
-  height: 150vh; /* full screen height */
-  overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 150vh; /* full screen height */
+    overflow: hidden;
 }
 
+/* Hero Image */
 .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* make sure image covers */
-  /* clip-path: polygon(100% 100%, 0% 100% , 0.00% 33.96%, 2.00% 33.95%, 4.00% 33.58%, 6.00% 32.88%, 8.00% 31.86%, 10.00% 30.56%, 12.00% 29.03%, 14.00% 27.32%, 16.00% 25.50%, 18.00% 23.62%, 20.00% 21.75%, 22.00% 19.96%, 24.00% 18.32%, 26.00% 16.88%, 28.00% 15.69%, 30.00% 14.79%, 32.00% 14.23%, 34.00% 14.00%, 36.00% 14.13%, 38.00% 14.62%, 40.00% 15.43%, 42.00% 16.55%, 44.00% 17.93%, 46.00% 19.52%, 48.00% 21.28%, 50.00% 23.13%, 52.00% 25.01%, 54.00% 26.86%, 56.00% 28.60%, 58.00% 30.18%, 60.00% 31.55%, 62.00% 32.64%, 64.00% 33.43%, 66.00% 33.89%, 68.00% 33.99%, 70.00% 33.74%, 72.00% 33.15%, 74.00% 32.23%, 76.00% 31.02%, 78.00% 29.56%, 80.00% 27.91%, 82.00% 26.11%, 84.00% 24.24%, 86.00% 22.37%, 88.00% 20.55%, 90.00% 18.85%, 92.00% 17.33%, 94.00% 16.06%, 96.00% 15.06%, 98.00% 14.38%, 100.00% 14.04%); */
-  /* clip-path: polygon(
-    0 0, 100% 0,
-    100% 80%, 98% 81.5%, 96% 83%, 94% 84%, 92% 85%,
-    90% 86%, 88% 87%, 86% 88%, 84% 89%, 82% 89.5%,
-    80% 90%, 78% 90.5%, 76% 91%, 74% 91.5%, 72% 92%,
-    70% 92.3%, 68% 92.6%, 66% 92.8%, 64% 93%,
-    62% 93.1%, 60% 93.2%, 58% 93.3%, 56% 93.4%,
-    54% 93.5%, 52% 93.6%, 50% 93.7%, 48% 93.8%,
-    46% 93.9%, 44% 94%, 42% 94.1%, 40% 94.2%,
-    38% 94.3%, 36% 94.4%, 34% 94.5%, 32% 94.6%,
-    30% 94.7%, 28% 94.8%, 26% 94.9%, 24% 95%,
-    22% 95.5%, 20% 96%, 18% 96.5%, 16% 97%,
-    14% 97.5%, 12% 98%, 10% 98.5%, 8% 99%,
-    6% 99.3%, 4% 99.6%, 2% 99.8%, 0% 100%
-  ); */
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* make sure image covers */
+    /*
+        The clip-path properties are commented out as they were in your original code.
+        They create a complex shape, which can be useful for unique designs.
+    */
 }
 
-/* Overlay Content */
+/* Overlay Content Container */
 .hero-content {
-  position: absolute;
-  top: 40%;   /* adjust as you like */
-  left: 5%;
-  color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+    /* Use flexbox for better alignment if you add more elements */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+/* Hero Title */
 .hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #fff; /* white text on image */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* improves readability */
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    /* margin-bottom: 1.25rem;  */
+    color: #fff;
+    /* Improved text shadow for better contrast and readability */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+.hero-para {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    /* font-weight: 700; */
+    /* margin-bottom: 1.25rem;  */
+    color: #fff;
+    width: 550px;
+    margin-bottom: 20px;
+    /* Improved text shadow for better contrast and readability */
+    /* text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
+}
+
+/* Hero Button */
 .hero-btn {
-  padding: 0.9rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #6F4E37; /* coffee brown */
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    padding: 1rem 2.5rem; /* Increased padding for a more substantial button */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 600; /* Bolder text */
+    background-color: #A0522D; /* A rich, deep brown for coffee */
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* Fully rounded button */
+    cursor: pointer;
+    /* Add a subtle box-shadow for depth and better professional look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect */
 .hero-btn:hover {
-  background-color: #3B2F2F; /* darker coffee */
+    background-color: #6F4E37; /* A slightly darker coffee shade */
+    transform: translateY(-2px); /* Lifts the button slightly */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Active State (click effect) */
+.hero-btn:active {
+    transform: translateY(0); /* Returns to original position */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate press */
 }
