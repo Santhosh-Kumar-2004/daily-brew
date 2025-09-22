@@ -3,7 +3,7 @@ import bean from "../assets/bean.svg";
 import "../styles/BackgroundDecor.css";
 import decor1 from "../assets/beans_life.png"; 
 import decor2 from "../assets/coffee_scup.png"; 
-import decor3 from "../assets/.png"; 
+import decor3 from "../assets/coffee_moottai.png"; 
 
 const BackgroundDecor = () => {
     return (
