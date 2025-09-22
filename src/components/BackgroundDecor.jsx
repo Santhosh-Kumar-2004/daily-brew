@@ -1,7 +1,7 @@
 import React from "react";
 import bean from "../assets/bean.svg";
 import "../styles/BackgroundDecor.css";
-import decor1 from "../assets/decor1.png"; 
+import decor1 from "../assets/beans_life.png"; 
 import decor2 from "../assets/decor2.png"; 
 import decor3 from "../assets/decor3.png"; 
 
