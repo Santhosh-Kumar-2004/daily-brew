@@ -73,15 +73,15 @@
   width: 100%;
   /* height: auto; */
   pointer-events: none; /* doesn’t block clicks */
-  margin-top: 50px;
+  /* margin-top: 50px; */
   z-index: 999;
 }
 
 /* Shared styles for all images */
 .decor-img {
   position: absolute;
-  width: 120px;
-  height: auto;
+  /* width: 120px; */
+  /* height: auto; */
   opacity: 0.4; /* make visible but not too strong */
 
   /* FILTERS:
@@ -91,10 +91,12 @@
      - opacity controls visibility
   */
   /* filter: brightness(0) invert(1); */
-  mix-blend-mode: multiply; /* helps blend with background */
+  /* mix-blend-mode: multiply; helps blend with background */
 }
 
 /* Positioning each image */
-.decor1 { top: 78%; left: 35%; }
-/* .decor2 { top: 50%; right: 20%; } */
+/* .decor1 { top: 78%; left: 35%; } */
+.decor2 { top: 10%; right: 60%;
+        /* rotate: 27x0deg;  */
+}
 /* .decor3 { bottom: 15%; left: 50%; } */
