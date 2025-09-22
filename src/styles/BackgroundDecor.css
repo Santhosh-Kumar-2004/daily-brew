@@ -67,3 +67,34 @@
 
 .blob1 { top: 40%; left: 10%; }
 .blob2 { bottom: 20%; right: 15%; }
+
+.scrolling-decor {
+  position: relative; /* stays in the flow with scrolling */
+  width: 100%;
+  height: auto;
+  pointer-events: none; /* doesn’t block clicks */
+  margin-top: 50px;
+  z-index: 999;
+}
+
+/* Shared styles for all images */
+.decor-img {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  opacity: 0.4; /* make visible but not too strong */
+
+  /* FILTERS:
+     - invert(1) turns white → black, black → white
+     - brightness(0) makes everything black
+     - invert(1) again flips it back (so original black stays strong)
+     - opacity controls visibility
+  */
+  /* filter: brightness(0) invert(1); */
+  mix-blend-mode: multiply; /* helps blend with background */
+}
+
+/* Positioning each image */
+.decor1 { top: 10%; left: 15%; }
+.decor2 { top: 40%; right: 20%; }
+.decor3 { bottom: 15%; left: 50%; }
