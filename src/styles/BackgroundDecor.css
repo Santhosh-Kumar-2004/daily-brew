@@ -95,7 +95,7 @@
 }
 
 /* Positioning each image */
-/* .decor1 { top: 78%; left: 35%; } */
+.decor1 { top: 90%; left: 65%; width: 30%; bottom: -10%;}
 .decor2 { top: 15%; right: 60%; bottom: 90%;
         /* rotate: 27x0deg;  */
 }
