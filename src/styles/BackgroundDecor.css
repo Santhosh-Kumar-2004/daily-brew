@@ -71,7 +71,7 @@
 .scrolling-decor {
   position: relative; /* stays in the flow with scrolling */
   width: 100%;
-  height: auto;
+  /* height: auto; */
   pointer-events: none; /* doesn’t block clicks */
   margin-top: 50px;
   z-index: 999;
@@ -95,6 +95,6 @@
 }
 
 /* Positioning each image */
-.decor1 { top: 10%; left: 15%; }
-.decor2 { top: 40%; right: 20%; }
-.decor3 { bottom: 15%; left: 50%; }
+.decor1 { top: 78%; left: 35%; }
+/* .decor2 { top: 50%; right: 20%; } */
+/* .decor3 { bottom: 15%; left: 50%; } */

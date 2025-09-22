@@ -3,6 +3,7 @@ import '../styles/TopCat.css'
 import espressoImg from '../assets/coffee1.jpg'
 import latteImg from '../assets/coffee2.jpg'
 import cappuccinoImg from '../assets/coffee3.jpg'
+import decor2 from "../assets/coffee_scup.png";
 
 const TopCategories = () => {
   const categories = [
@@ -26,6 +27,11 @@ const TopCategories = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="scrolling-decor">
+        {/* <img src={decor1} alt="decor1" className="decor-img decor1" /> */}
+        <img src={decor2} alt="decor2" className="decor-img decor2" />
+        {/* <img src={decor3} alt="decor3" className="decor-img decor3" /> */}
       </div>
     </section>
   )
