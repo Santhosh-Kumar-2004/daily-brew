@@ -29,7 +29,7 @@ const BackgroundDecor = () => {
             <div className="scrolling-decor">
                 {/* <img src={decor1} alt="decor1" className="decor-img decor1" /> */}
                 {/* <img src={decor2} alt="decor2" className="decor-img decor2" /> */}
-                <img src={decor3} alt="decor3" className="decor-img decor3" />
+                {/* <img src={decor3} alt="decor3" className="decor-img decor3" /> */}
             </div>
 
             {/* <div className="steam steam1"></div>
