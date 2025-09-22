@@ -37,8 +37,8 @@ const BackgroundDecor = () => {
             {/* <div className="steam steam1"></div>
             <div className="steam steam2"></div> */}
 
-            <div className="blob blob1"></div>
-            <div className="blob blob2"></div>
+            {/* <div className="blob blob1"></div>
+            <div className="blob blob2"></div> */}
 
         </>
     );
