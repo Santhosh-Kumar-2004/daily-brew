@@ -4,6 +4,7 @@ import espressoImg from '../assets/coffee1.jpg'
 import latteImg from '../assets/coffee2.jpg'
 import cappuccinoImg from '../assets/coffee3.jpg'
 import decor2 from "../assets/coffee_scup.png";
+import decor1 from "../assets/beans_life.png";
 
 const TopCategories = () => {
   const categories = [
